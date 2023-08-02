@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&family=Ruda:wght@400;700&display=swap');
+
+html {
+  box-sizing:border-box;
+}
+*{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Poppins', Calibri, sans-serif;
+  background-color: white;
+  word-wrap: normal;
+}
+
+/*link styles*/
+a{
+  text-decoration: none;
+
+}
+a:link{
+  color:#ea9423;
+}
+a:visited {
+  color: #9b816d;
+}
+a:focus, a:hover, a:active {
+  color:#FFFF;
+  background-color: #ea9423;
+  font-weight:bold;
+}
+/*header styles*/
+header{
+  text-align: center;
+  font-family: 'Ruda', sans-serif;
+  font-weight: bolder;
+}
+nav ul{
+  /*background-color: #512D38;
+  color:gold;
+  list-style: none;*/
+  list-style: none;
+  text-align: left;
+  display: inline-flex;
+
+}
+nav li{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*content styles*/
+h2,h1{
+  font-family: 'Ruda', sans-serif;
+}
+main{
+  padding: 1em;
+  margin: 2em;
+}
+article{
+
+}
+
+main .intro{
+  border-top: 1px dotted;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: #ea94239d;
+  padding-bottom: 1em;
+  border-radius: .5em;
+}
+main section .intro-info{
+  background-color: #3a3029;
+}
+/*list styles*/
+.list-posts{
+
+}
+/*footer styles*/
+
+footer{
+  padding: 1em;
+  background-color: #3a3029;
+  border-radius: 5px;
+  color:antiquewhite;
+  font-weight: bolder;
+  padding:2em;
+  text-align: right 10px;
+}

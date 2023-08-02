@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Samantha Yap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Samantha Yap</h1>
+    <h2>Contact</h2>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="art.html">Art Portfolio</a></li>
+        <li><a href="design.html">Design Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="contact_form.php" method="POST">
+      <fieldset>
+        <legend>Your Information</legend>
+        <ul>
+          <li><label for="form-name">Name:</label><input type="text" name="contactname" id="form-name"></li>
+          <li><label for="form-email">Email:</label><input type="email" name="email" id="form-email"></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Message:</legend>
+        <h3>Reason for Contact (check all that apply):</h3>
+        <ul id="form-reason">
+          <li><label><input type="checkbox" name="reason[]" value="job">Career/Job Opportunity</label></li>
+          <li><label><input type="checkbox" name="reason[]" value="art">Art</label></li>
+          <li><label><input type="checkbox" name="reason[]" value="design">Design/Development</label></li>
+          <li><label><input type="checkbox" name="reason[]" value="blog">Blog</label></li>
+          <li><label><input type="checkbox" name="reason[]" value="other">Other</label></li>
+        </ul>
+        <label for="form-message">Message Content:</label><br>
+        <textarea name="message" maxlength="1000" rows="4" cols="60" placeholder="No more than 1000 characters long"
+          id="form-message"></textarea>
+      </fieldset>
+
+      <p><input type="submit" value="Send me an Email"></p>
+    </form>
+  </main>
+  <footer>
+    <p>Stay in touch!</p>
+    <p><a href="https://www.instagram.com/sam.art.sy">Instagram</a> |
+      <a href="mailto:samsyap@gmail.com">Email</a>
+
+    </p>
+  </footer>
+</body>
+
+</html>
