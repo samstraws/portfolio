@@ -19,6 +19,9 @@ body{
 /*link styles*/
 a{
   text-decoration: none;
+  border-bottom: 1px dotted #9b816d;
+  padding-bottom: .01em;
+
 
 }
 a:link{
@@ -26,6 +29,7 @@ a:link{
 }
 a:visited {
   color: #9b816d;
+  
 }
 a:focus, a:hover, a:active {
   color:#FFFF;
@@ -37,6 +41,10 @@ header{
   text-align: center;
   font-family: 'Ruda', sans-serif;
   font-weight: bolder;
+}
+header h2{
+  letter-spacing: 2px;
+  font-size: smaller;
 }
 nav ul{
   /*background-color: #512D38;
@@ -51,6 +59,9 @@ nav li{
   padding-left: 10px;
   padding-right: 10px;
 }
+nav a{
+  border:none;
+}
 
 /*content styles*/
 h2,h1{
@@ -61,7 +72,8 @@ main{
   margin: 2em;
 }
 article{
-
+ border:#3a3029;
+ border-radius: 2px;
 }
 
 main .intro{
@@ -72,13 +84,75 @@ main .intro{
   padding-bottom: 1em;
   border-radius: .5em;
 }
-main section .intro-info{
-  background-color: #3a3029;
+#about p{
+ border: 2px dotted;
+ border-width: 1px;
+ text-align: 25px;
+ color:darkslategray;
+ padding:1em;
+}
+#previous:before{
+  content: "\25C0    ";
+  margin-left:.5em;
+}
+#next:after{
+content:"    \25B6";
+margin-right:.5em;
+}
+#intro-info{
+  font-size: smaller;
+  padding-top: -.5em;
+}
+#tagline{
+  font-size:medium;
+  color:rgb(27, 102, 73);
+  font-style: italic;
+}
+table{
+  border:.2em solid;
+}
+td, th{
+  border: 1px solid gray;
+}
+table caption{
+  padding-top: 2em;
+  font: 'Ruda' bolder 300px sans-serif;
+}
+img{
+  border-radius: 3px;
+}
+.art-desc{
+  border-top:  medium double #3a3029a5;
+}
+.art-desc figcaption{
+  font-style: italic;
+  font-size: small;
 }
 /*list styles*/
-.list-posts{
+.list-posts ul{
+list-style: none;
+margin-right:50%;
 
 }
+.list-posts li{
+  border: 3px dotted;
+  border-radius: 1em;
+  padding:1em;
+  margin: 2em;
+  background-color: rgba(147, 180, 241, 0.2);
+}
+.list-posts li:hover, li:active, li:focus{
+background-color: #ea9423;
+color:white;
+}
+
+.list-posts a{
+  font-weight: bolder;
+  color:#3a3029;
+  background-color: none;
+  border:none;
+}
+
 /*footer styles*/
 
 footer{
