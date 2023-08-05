@@ -4,50 +4,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&family=Ruda:wght@400;700&display=swap');
 
 html {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
-*{
+
+* {
   box-sizing: inherit;
 }
 
-body{
+body {
   font-family: 'Poppins', Calibri, sans-serif;
   background-color: white;
   word-wrap: normal;
 }
 
 /*link styles*/
-a{
+a {
   text-decoration: none;
   border-bottom: 1px dotted #9b816d;
   padding-bottom: .01em;
 
 
 }
-a:link{
-  color:#ea9423;
+
+a:link {
+  color: #ea9423;
 }
+
 a:visited {
   color: #9b816d;
-  
+
 }
-a:focus, a:hover, a:active{
-  color:#FFFF;
+
+a:focus,
+a:hover,
+a:active {
+  color: #FFFF;
   background-color: #ea9423;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 /*header styles*/
-header{
+header {
   text-align: center;
   font-family: 'Ruda', sans-serif;
   font-weight: bolder;
 }
-header h2{
+
+header h2 {
   letter-spacing: 2px;
   font-size: smaller;
 }
-nav ul{
+
+nav ul {
   /*background-color: #512D38;
   color:gold;
   list-style: none;*/
@@ -56,36 +64,43 @@ nav ul{
   display: inline-flex;
 
 }
-nav li{
+
+nav li {
   padding-left: 10px;
   padding-right: 10px;
 }
-#active{
+
+#nav-active {
   background-color: #332109;
 }
-#active a{
-  color:white;
+
+#nav-active a {
+  color: white;
   font-weight: bolder;
   font-size: large;
 }
-nav a{
-  border:none;
+
+nav a {
+  border: none;
 }
 
 /*content styles*/
-h2,h1{
+h2,
+h1 {
   font-family: 'Ruda', sans-serif;
 }
-main{
+
+main {
   padding: 1em;
   margin: 2em;
 }
-article{
- border:#3a3029;
- border-radius: 2px;
+
+article {
+  border: #3a3029;
+  border-radius: 2px;
 }
 
-main .intro{
+main .intro {
   border-top: 1px dotted;
   padding-left: 2em;
   padding-right: 2em;
@@ -93,104 +108,121 @@ main .intro{
   padding-bottom: 1em;
   border-radius: .5em;
 }
-#about img{
+
+#about img {
   float: left;
   margin: 0 1em 1em 0;
 }
-#about{
- border: 2px dotted;
- border-width: 1px;
- color:darkslategray;
- padding:1em;
+
+#about {
+  border: 2px dotted;
+  border-width: 1px;
+  color: darkslategray;
+  padding: 1em;
 }
-#skills{
+
+#skills {
   clear: left;
 }
 
-#previous:before{
+#previous:before {
   content: "\25C0    ";
-  margin-left:.5em;
+  margin-left: .5em;
 }
-#next:after{
-content:"    \25B6";
-margin-right:.5em;
+
+#next:after {
+  content: "    \25B6";
+  margin-right: .5em;
 }
-#intro-info{
+
+#intro-info {
   font-size: smaller;
 }
-#tagline{
-  font-size:medium;
-  color:rgb(27, 102, 73);
+
+#tagline {
+  font-size: medium;
+  color: rgb(27, 102, 73);
   font-style: italic;
 }
 
-img{
+img {
   border-radius: 3px;
 }
-.art-desc{
-  border-top:  medium double #3a3029a5;
+
+.art-desc {
+  border-top: medium double #3a3029a5;
 }
-.art-desc figcaption{
+
+.art-desc figcaption {
   font-style: italic;
   font-size: small;
 }
 
 /*list styles*/
-.list-posts ul{
-list-style: none;
-margin-right:40%;
+.list-posts ul {
+  list-style: none;
+  margin-right: 40%;
 
 }
-.list-posts li{
+
+.list-posts li {
   border: 3px dotted;
   border-radius: 1em;
-  padding:1em;
+  padding: 1em;
   margin: 2em;
   background-color: rgba(147, 180, 241, 0.2);
 }
-.list-posts li:hover, li:active, li:focus{
-background-color: #ea9423;
-color:white;
+
+.list-posts li:hover,
+li:active,
+li:focus {
+  background-color: #ea9423;
+  color: white;
 }
 
-.list-posts a{
+.list-posts a {
   font-weight: bolder;
-  color:#3a3029;
-  border:none;
+  color: #3a3029;
+  border: none;
 }
 
 /*TABLES*/
-table{
-  border:.07em solid;
+table {
+  border: .07em solid;
   border-radius: 3px;
 }
-td, th{
+
+td,
+th {
   border: 1px solid gray;
   text-align: center;
 }
-table caption{
+
+table caption {
   padding-top: 2em;
   font-family: 'Ruda', sans-serif;
   font-weight: bolder;
   font-size: large;
 }
+
 /* FORMS*/
-fieldset{
+fieldset {
   border-radius: 3px;
   padding-left: 1em;
 }
-fieldset ul li{
+
+fieldset ul li {
   list-style: none;
 }
 
 /*footer styles*/
 
-footer{
+footer {
   padding: 1em;
   background-color: #3a3029;
   border-radius: 5px;
-  color:antiquewhite;
+  color: antiquewhite;
   font-weight: bolder;
-  padding:2em;
+  padding: 2em;
   text-align: right;
 }
