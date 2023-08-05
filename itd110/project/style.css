@@ -31,11 +31,12 @@ a:visited {
   color: #9b816d;
   
 }
-a:focus, a:hover, a:active {
+a:focus, a:hover, a:active{
   color:#FFFF;
   background-color: #ea9423;
   font-weight:bold;
 }
+
 /*header styles*/
 header{
   text-align: center;
@@ -58,6 +59,14 @@ nav ul{
 nav li{
   padding-left: 10px;
   padding-right: 10px;
+}
+#active{
+  background-color: #332109;
+}
+#active a{
+  color:white;
+  font-weight: bolder;
+  font-size: large;
 }
 nav a{
   border:none;
