@@ -84,13 +84,20 @@ main .intro{
   padding-bottom: 1em;
   border-radius: .5em;
 }
-#about p{
+#about img{
+  float: left;
+  margin: 0 1em 1em 0;
+}
+#about{
  border: 2px dotted;
  border-width: 1px;
- text-align: 25px;
  color:darkslategray;
  padding:1em;
 }
+#skills{
+  clear: left;
+}
+
 #previous:before{
   content: "\25C0    ";
   margin-left:.5em;
@@ -101,23 +108,13 @@ margin-right:.5em;
 }
 #intro-info{
   font-size: smaller;
-  padding-top: -.5em;
 }
 #tagline{
   font-size:medium;
   color:rgb(27, 102, 73);
   font-style: italic;
 }
-table{
-  border:.2em solid;
-}
-td, th{
-  border: 1px solid gray;
-}
-table caption{
-  padding-top: 2em;
-  font: 'Ruda' bolder 300px sans-serif;
-}
+
 img{
   border-radius: 3px;
 }
@@ -128,10 +125,11 @@ img{
   font-style: italic;
   font-size: small;
 }
+
 /*list styles*/
 .list-posts ul{
 list-style: none;
-margin-right:50%;
+margin-right:40%;
 
 }
 .list-posts li{
@@ -149,8 +147,31 @@ color:white;
 .list-posts a{
   font-weight: bolder;
   color:#3a3029;
-  background-color: none;
   border:none;
+}
+
+/*TABLES*/
+table{
+  border:.07em solid;
+  border-radius: 3px;
+}
+td, th{
+  border: 1px solid gray;
+  text-align: center;
+}
+table caption{
+  padding-top: 2em;
+  font-family: 'Ruda', sans-serif;
+  font-weight: bolder;
+  font-size: large;
+}
+/* FORMS*/
+fieldset{
+  border-radius: 3px;
+  padding-left: 1em;
+}
+fieldset ul li{
+  list-style: none;
 }
 
 /*footer styles*/
@@ -162,5 +183,5 @@ footer{
   color:antiquewhite;
   font-weight: bolder;
   padding:2em;
-  text-align: right 10px;
+  text-align: right;
 }
